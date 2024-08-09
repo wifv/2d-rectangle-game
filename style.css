@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+#gameArea {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightblue;
+  position: relative;
+}
+
+.animation,
+#character {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(77, 77, 77);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.arrows {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translate(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  gap: 50px;
+}
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#up { rotate: 270deg; }
+#down { rotate: 90deg; }
+#left { rotate: 180deg; }
